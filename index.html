@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8b8fb16f60.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-neutral-100">
+
+   <!-- nav section -->
+<nav class="w-full h-screen bg-[url('./images/portrait-young-little-boy.jpg')] bg-cover bg-no-repeat max-md:bg-center max-md:bg-cover relative">
+    <div class="w-full h-screen bg-gradient-to-r from-black to-transparent sm:max-w-full relative">
+        <!-- Put this wrapper near the top of your layout -->
+<div class="relative">
+
+  <!-- CHECKBOX PEER (must come BEFORE the menu) -->
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+  <!-- NAV HEADER (label for checkbox can be inside header) -->
+  <div class="flex justify-between items-center pt-5 pb-5 fixed w-full z-40 px-4 md:px-10 bg-black/30">
+    <!-- Social Icons -->
+    <div class="text-white flex gap-3 md:gap-5">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-5 lg:gap-10 text-neutral-300 text-md font-sans items-center">
+      <li><a href="hope.html">Home</a></li><li><a href="projectsec.html">Projects</a></li><li>About</li>
+      <li class="text-xl font-bold text-amber-300">HOPE</li>
+      <li>Volunteer</li><li>Blog</li><li>Contact</li>
+    </ul>
+
+    <!-- Desktop Donate -->
+    <button class="hidden md:block text-white border px-4 py-2">Donate</button>
+
+    <!-- Mobile Hamburger (label toggles the checkbox) -->
+    <div class="md:hidden flex items-center">
+      <label for="menu-toggle" class="text-white text-2xl cursor-pointer z-50">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU: note it comes AFTER the checkbox in the DOM -->
+  <div id="mobile-menu" class="hidden peer-checked:flex fixed flex-col top-[70px] left-0 w-full bg-black text-white p-6 gap-4 md:hidden z-50">
+    <ul class="flex flex-col gap-4 text-lg">
+      <li class="hover:text-amber-300 transition"><a href="hope.html">Home</a></li>
+      <li class="hover:text-amber-300 transition"><a href="projectsec.html">Projects</a></li>
+      <li class="hover:text-amber-300 transition">About</li>
+      <li class="hover:text-amber-300 transition">Volunteer</li>
+      <li class="hover:text-amber-300 transition">Blog</li>
+      <li class="hover:text-amber-300 transition">Contact</li>
+    </ul>
+    <button class="text-white border px-4 py-2 mt-2 w-full text-center hover:bg-amber-300 hover:text-black transition">Donate</button>
+  </div>
+
+</div>
+
+    
+
+
+        <!-- Hero Section -->
+        <div class="flex flex-col justify-center items-center w-full h-[85vh] gap-6 px-4 md:px-10 relative z-0">
+            <h1 class="text-white text-4xl md:text-7xl font-bold text-center">Hope For Humanity</h1>
+            <p class="text-white text-base md:text-lg font-normal max-w-full md:max-w-3/5 text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum voluptatum sit illum incidunt nemo sapiente consequuntur esse amet, ullam laudantium tempora architecto hic nulla optio aliquam cupiditate, magnam et quam?
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mt-3">
+                <button class="bg-amber-300 text-black px-6 py-2 w-40 md:w-50">Donate Now</button>
+                <button class="bg-black text-white px-6 py-2 w-40 md:w-50">Discover</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Services Grid -->
+    <div class="w-full flex justify-center items-center bg-neutral-100 px-4 md:px-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-white -mt-20 z-10">
+            <!-- Repeat grid items -->
+            <div class="flex flex-col gap-2 items-center justify-center p-6 border border-gray-200">
+                <i class="fa-solid fa-bowl-food text-5xl"></i>
+                <h1 class="text-2xl md:text-3xl font-bold text-center">Healthy Food</h1>
+                <p class="text-md font-normal text-center max-w-xs md:max-w-60">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque obcaecati accusantium</p>
+                <button class="border-b border-black mt-2">Make Donation</button>
+            </div>
+            <div class="flex flex-col gap-2 items-center justify-center p-6 border border-gray-200">
+                <i class="fa-solid fa-bowl-food text-5xl"></i>
+                <h1 class="text-2xl md:text-3xl font-bold text-center">Healthy Food</h1>
+                <p class="text-md font-normal text-center max-w-xs md:max-w-60">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque obcaecati accusantium</p>
+                <button class="border-b border-black mt-2">Make Donation</button>
+            </div>
+            <div class="flex flex-col gap-2 items-center justify-center p-6 border border-gray-200">
+                <i class="fa-solid fa-bowl-food text-5xl"></i>
+                <h1 class="text-2xl md:text-3xl font-bold text-center">Healthy Food</h1>
+                <p class="text-md font-normal text-center max-w-xs md:max-w-60">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque obcaecati accusantium</p>
+                <button class="border-b border-black mt-2">Make Donation</button>
+            </div>
+            <div class="flex flex-col gap-2 items-center justify-center p-6 border border-gray-200">
+                <i class="fa-solid fa-bowl-food text-5xl"></i>
+                <h1 class="text-2xl md:text-3xl font-bold text-center">Healthy Food</h1>
+                <p class="text-md font-normal text-center max-w-xs md:max-w-60">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque obcaecati accusantium</p>
+                <button class="border-b border-black mt-2">Make Donation</button>
+            </div>
+            <div class="flex flex-col gap-2 items-center justify-center p-6 border border-gray-200">
+                <i class="fa-solid fa-bowl-food text-5xl"></i>
+                <h1 class="text-2xl md:text-3xl font-bold text-center">Healthy Food</h1>
+                <p class="text-md font-normal text-center max-w-xs md:max-w-60">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque obcaecati accusantium</p>
+                <button class="border-b border-black mt-2">Make Donation</button>
+            </div>
+            <div class="flex flex-col gap-2 items-center justify-center p-6 border border-gray-200">
+                <i class="fa-solid fa-bowl-food text-5xl"></i>
+                <h1 class="text-2xl md:text-3xl font-bold text-center">Healthy Food</h1>
+                <p class="text-md font-normal text-center max-w-xs md:max-w-60">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque obcaecati accusantium</p>
+                <button class="border-b border-black mt-2">Make Donation</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Causes -->
+    <div class="bg-neutral-100 py-10">
+        <h1 class="font-bold text-4xl text-center pb-2">Featured Causes</h1>
+        <p class="font-normal text-md text-center text-neutral-500 pb-8">WE LISTEN AND ADVICE</p>
+        <div class="flex flex-wrap justify-center gap-6 px-4 md:px-10">
+            <!-- Repeat cards -->
+            <div class="w-full sm:w-80 bg-white overflow-hidden flex flex-col transition hover:shadow-xl hover:scale-105 duration-500">
+                <img class="w-full h-48 object-cover" src="./images/african-children-enjoying-life.jpg" alt="">
+                <div class="flex flex-col px-4 gap-2 py-3">
+                    <h1 class="font-bold text-lg pt-2">The deprivation of African Children to Education</h1>
+                    <p class="text-sm max-w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita architecto dolorem impedit quaerat perspiciatis nam, laboriosam non vitae nemo.</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-80 bg-white overflow-hidden flex flex-col transition hover:shadow-xl hover:scale-105 duration-500">
+                <img class="w-full h-48 object-cover" src="./images/photorealistic-style-portrait-young-people-with-braids-hairstyle.jpg" alt="">
+                <div class="flex flex-col px-4 gap-2 py-3">
+                    <h1 class="font-bold text-lg pt-2">The deprivation of African Children to Education</h1>
+                    <p class="text-sm max-w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita architecto dolorem impedit quaerat perspiciatis nam, laboriosam non vitae nemo.</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-80 bg-white overflow-hidden flex flex-col transition hover:shadow-xl hover:scale-105 duration-500">
+                <img class="w-full h-48 object-cover" src="./images/smiley-young-african-boy-standing-field.jpg" alt="">
+                <div class="flex flex-col px-4 gap-2 py-3">
+                    <h1 class="font-bold text-lg pt-2">The deprivation of African Children to Education</h1>
+                    <p class="text-sm max-w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita architecto dolorem impedit quaerat perspiciatis nam, laboriosam non vitae nemo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How We Help -->
+    <div class="flex flex-wrap justify-center gap-6 bg-yellow-100 py-10 px-4 md:px-10">
+        <div class="w-full md:w-[45%] h-64 md:h-125 bg-[url('./images/portrait-young-little-boy.jpg')] bg-center bg-cover rounded-lg"></div>
+        <div class="w-full md:w-[45%] flex flex-col justify-center gap-3">
+            <h1 class="text-3xl md:text-5xl font-bold max-w-full md:max-w-130">How we are changing children's lives</h1>
+            <p class="text-lg max-w-full md:max-w-130">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate architecto nulla accusantium quod pariatur, fugiat aspernatur assumenda atque perferendis dignissimos eos iure ratione quo, vero expedita ex incidunt delectus? Dignissimos?</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white w-full px-4 md:px-10 py-10">
+        <div class="flex flex-wrap justify-between items-start gap-6">
+            <h1 class="text-2xl font-semibold max-w-full md:max-w-150">Support the Hope Vision Today and make the African Child Great.</h1>
+            <div>
+                <h1 class="text-xl font-semibold mb-2">Get in Touch!</h1>
+                <div class="flex flex-wrap items-center border rounded-full overflow-hidden w-full max-w-md">
+                    <input type="text" placeholder="Enter your email" class="flex-1 py-2 px-4 outline-none bg-transparent text-white">
+                    <button class="bg-amber-300 px-4 py-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-between mt-10 gap-6 text-sm">
+            <div>
+                <h1 class="font-semibold mb-1">CONTACT INFORMATION</h1>
+                <ul>
+                    <li><i class="fa-solid fa-square-envelope text-amber-300"></i> support@hope.com</li>
+                    <li><i class="fa-solid fa-phone text-amber-300"></i> 1800-3232-8686</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-semibold mb-1">COMPANY</h1>
+                <ul class="flex flex-col gap-1">
+                    <li>Features</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-semibold mb-1">HELP</h1>
+                <ul class="flex flex-col gap-1">
+                    <li>FAQ</li>
+                    <li>Help Center</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-semibold mb-1">FOLLOW US</h1>
+                <div class="flex gap-3 text-2xl">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4 border-gray-400">
+
+        <div class="flex flex-wrap justify-between text-sm">
+            <p><i class="fa-regular fa-copyright"></i> 2025 Hope. All Rights Reserved.</p>
+            <ul class="flex gap-4">
+                <li>Privacy</li>
+                <li>Terms & Condition</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
